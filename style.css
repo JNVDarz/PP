@@ -1,22 +1,25 @@
+/* Загальний стиль */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
+/* Навігація */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background: #222;
+    background: #1e1e1e;
+    border-bottom: 2px solid #ff6600;
 }
 
 .logo {
     color: white;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -31,7 +34,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #e0e0e0;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -40,16 +43,18 @@ nav {
     color: #ff6600;
 }
 
+/* Головна секція */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: url('../img/hero.jpg') no-repeat center center/cover;
+    padding: 120px 20px;
+    background: url('../img/dark-bg.jpg') no-repeat center center/cover;
     color: white;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
     font-size: 42px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .btn {
@@ -68,17 +73,26 @@ nav {
     background: #e05500;
 }
 
+/* Фічі */
 .features {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 50px 20px;
-    background: #fff;
+    background: #1a1a1a;
 }
 
 .feature {
     flex: 1;
     margin: 15px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    background: #333;
 }
 
 .feature i {
@@ -94,6 +108,7 @@ nav {
 footer {
     text-align: center;
     padding: 20px;
-    background: #222;
+    background: #1e1e1e;
     color: white;
+    border-top: 2px solid #ff6600;
 }
