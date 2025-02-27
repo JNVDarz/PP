@@ -155,3 +155,18 @@ footer {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Фіксує футер внизу сторінки */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto; /* Притискає футер до низу */
+    text-align: center;
+}
